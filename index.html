@@ -179,6 +179,17 @@
         .sidebar('attach events', '.toc.item')
       ;
 
+      //activate embed
+      $('.url.example .ui.embed').embed();
+
+      // activate modal
+      $('.ui.modal')
+        .modal({
+          blurring: true
+        })
+        .modal('show')
+      ;
+
     })
   ;
   </script>
@@ -262,9 +273,7 @@
 
     <div class="ui two stackable grid container cards">
       <div class="ui card">
-        <div class="video-container">
-          <iframe width="550" height="309" src="https://www.youtube.com/embed/m0uJgeNph5s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="ui embed" data-source="youtube" data-id="m0uJgeNph5s"></div>
         <div class="content">
           <div class="header">「台灣 NO.1」第二彈！美國實況主對決玻璃心中國玩家</div>
           <div class="description">
@@ -278,9 +287,7 @@
       </div>
 
       <div class="ui card">
-        <div class="video-container">
-          <iframe width="550" height="309" src="https://www.youtube.com/embed/byXxkW_t3E8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="ui embed" data-source="youtube" data-id="byXxkW_t3E8"></div>
         <div class="content">
           <div class="header">台灣NO.1最新作！這次學會中文髒話還秀出國旗的美國實況主</div>
           <div class="description">
@@ -297,6 +304,23 @@
   </div>
 
 </div>
+
+<!-- Modal | Start-->
+<div class="ui inverted modal scrolling transition hidden">
+  <div class="header"><i class="Announcement icon"></i> 插播訊息</div>
+  <div class="image content">
+    <div class="ui embed" data-source="youtube" data-id="t57URqSp5Ew"></div>
+    <div class="description">
+      <div class="ui header">超過份！子瑜道歉　中國網友嘲諷：跪在錢面前</div>
+      <p>韓國團體「TWICE」台灣籍人氣成員周子瑜，因被黃安舉報是台獨份子，影響在中國的活動。稍早，經紀公司在微博「JYPnation」PO 出周子瑜面色憔悴、語氣凝重的公開道歉影片，在網路上引起台灣輿論嘩然。</p>
+      <p><i class="Linkify icon"></i> 資料來源：<a href="http://bitly.com/1ZpF5Ci" target="_blank" title="蘋果日報：超過份！子瑜道歉　中國網友嘲諷：跪在錢面前" alt="蘋果日報：超過份！子瑜道歉　中國網友嘲諷：跪在錢面前">蘋果日報</a></p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui large star rating" data-rating="5"></div>
+  </div>
+</div>
+<!-- Modal | End-->
 
 <footer>
 
